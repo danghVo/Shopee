@@ -1,0 +1,258 @@
+.font-strong{
+    font-weight: 550 !important;
+}
+
+#header{
+    height: 120px;
+    background-image: linear-gradient(0, #fe6533, #f63f2e);
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+}   
+
+.header__nav .nav-list{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.nav-list__item{
+    margin:0 8px;
+    position: relative;
+}
+
+.nav-list__item,
+.nav-item__link{
+    text-decoration: none;
+    color: var(--white-color);
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom:4px;
+}
+
+.nav-item__icon-link,
+.nav-list__item,
+.nav-item__link{
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-item__icon{
+    margin-right: 5px;
+}
+
+.nav-item--separate::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-right: 2px solid #fb9086;
+    height: 15px;
+    top: 0;
+    right: -9px;
+    transform: translateX(50%);
+}
+
+.nav-item__icon-link{
+    text-decoration: none;
+    color: var(--white-color);
+    margin: 0 4px;
+}
+
+.nav-item__icon-link:hover{
+    opacity: 0.6;
+}
+
+.nav-item__link:hover{
+   color: #fb9086;
+}
+
+/*H QR*/
+.nav-item__download{
+    width: 170px;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 118%;
+    left: 0;
+    padding: 4px;
+    display: none;
+    animation: fadeIn ease 0.3s;
+    -webkit-animation: fadeIn ease 0.3s;
+    will-change: opacity;
+}
+
+.link-extend::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 18px;
+    left: 0;
+    top: -8px;
+
+}
+
+.nav-item__qr--show:hover .nav-item__download{
+    display: block;
+}
+
+.nav-item__qr-img{
+    width: 100%;
+}
+
+.nav-item__app{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item__app-link{    
+}
+
+.nav-item__app-link:first-child{
+    margin-left: 11px;
+}
+
+.nav-item__app-link:last-child{
+    margin-right: 11px;
+}
+
+.nav-item__app-img{
+    height: 17px;
+}
+
+/*Header nav notify*/
+.nav__notify{
+    position: absolute;
+    background-color: var(--white-color);
+    width: 404px;
+    right: 0;
+    top: 118%;
+    display: none;
+    animation: Growth ease-in 0.25s;
+    -webkit-animation: Growth ease-in 0.25s;
+    will-change: opacity, transform;
+    transform-origin:top right 20px;/*Chuyển tâm của animation*/
+}
+
+.nav__notify--show:hover .nav__notify{
+    display: block;
+}
+
+/*Arrow top*/
+.nav__notify-header::before{
+    content: "";
+    border-width: 20px 36px;
+    border-style:solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -26px;
+    right: -2px;
+}
+
+.nav__notify-header{
+    height: 40px;
+}
+
+.nav__notify-header h3{
+    font-weight: 400;
+    user-select: none;
+    margin: 0 0 0 12px;
+    font-size: 1.4rem;
+    color: #999;
+    line-height: 40px;
+}
+
+.nav__notify-container{
+    padding: 0;
+    list-style: none;
+}
+
+.nav__notify-items{
+}
+
+.nav__notify-link--viewed{
+    background-color: rgba(238, 75, 43, 0.1);
+}
+
+.nav__notify-link{
+    display: flex;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.nav__notify-link:hover{
+    background-color: #f0f0f0;
+}
+
+.nav__notify-img{
+    width: 48px;
+    object-fit: contain;
+}
+
+.nav__notify-content{
+    margin-left: 12px;
+}
+
+.nav__notify-name{
+    font-weight: 450;
+    font-size: 1.5rem;
+    display: block;
+    color: var(--black-color);
+    margin-bottom: 4px;
+    line-height: 1.7rem;
+}
+
+.nav__notify-decription{
+    display: block;
+    color: #999;
+    line-height: 1.7rem;
+}
+
+
+.nav__notify-footer{
+}
+
+.nav-notify__footer-content{
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: center;
+    display: block;
+    padding: 4px 16px;
+}
+
+/* Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    opacity: 0.2;
+}
+
+.modal__body{
+    width: 300px;
+    height: 300px;
+    background-color: var(--white-color);
+    /* margin: auto; */
+
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.modal__inner{
+
+}
+
