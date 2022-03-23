@@ -123,13 +123,15 @@
 
 /*Header nav notify*/
 .nav__notify{
+    --growth-to:1;
+    --growth-from:0;
     position: absolute;
     background-color: var(--white-color);
     width: 404px;
     right: 0;
     top: 118%;
     display: none;
-    animation: Growth ease-in 0.25s;
+    animation: Growth ease-in 0.2s;
     -webkit-animation: Growth ease-in 0.25s;
     will-change: opacity, transform;
     transform-origin:top right 20px;/*Chuyển tâm của animation*/
@@ -147,7 +149,7 @@
     border-color: transparent transparent var(--white-color) transparent;
     position: absolute;
     top: -26px;
-    right: -2px;
+    right: -1px;
 }
 
 .nav__notify-header{
@@ -327,20 +329,20 @@
 /* Social */
 .auth-form__socials{
     background-color:#e9e7e7;
-    padding: 16px 36px;
+    padding: 16px 32px;
     display: flex;
     justify-content: space-between;
     margin-top: 21px;
 }
 
 .auth-form__socials-icon{
-    font-size: 1.8rem;
+    font-size: 1.8rem;  
 }
 
 
 .auth-form__socials-icon--facebook
 .auth-form__socials-icon{
-    color: var(--white-color);
+    color: var(--white-color);  
 }
 
 .auth-form__socials-icon--facebook{
@@ -348,8 +350,12 @@
     color: var(--white-color);
 }
 
-.auth-form__socials--label{
+.auth-form__socials--label-register{
     margin: 0 32px;
+}
+
+.auth-form__socials--label-login{
+    margin: 0 27px;
 }
 
 .auth-form__socials-icon--google{
