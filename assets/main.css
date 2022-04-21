@@ -10,6 +10,7 @@
 .header__nav{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4px;
 }   
 
 .header__nav .nav-list{
@@ -18,7 +19,6 @@
     margin: 10px 0 0 0;
     display: flex;
 }
-
 .nav-list__item{
     margin:0 8px;
     position: relative;
@@ -31,7 +31,7 @@
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
 }
 
 .nav-item__icon-link,
@@ -51,7 +51,7 @@
     position: absolute;
     border-right: 2px solid #fb9086;
     height: 15px;
-    top: 0;
+    top: 2px;
     right: -9px;
     transform: translateX(50%);
 }
@@ -530,7 +530,7 @@
 }
 
 .header__cart-list-head{
-    margin: 8px 0 24px 12px;
+    margin: 12px 0 0px 12px;
     font-size: 1.4rem;
     color: #999;
     font-weight: 400;
@@ -834,5 +834,4 @@
     font-size: 1.4rem;
     line-height: 38px;
     display: block;
-
 }
